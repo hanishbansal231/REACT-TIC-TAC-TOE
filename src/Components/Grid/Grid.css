@@ -1,0 +1,54 @@
+.grid {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.turn-highlight {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.reset {
+    display: inline-block;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #5f9ea0;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .2s linear ease-in-out;
+    font-size: 1.1rem;
+}
+
+.reset:hover {
+    background-color: #69a6a9;
+}
+
+.winner-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+    .grid {
+        height: 400px;
+        width: 400px;
+      
+    }
+}
+
+@media (max-width: 450px) {
+    .grid {
+        height: 300px;
+        width: 300px;
+    }
+    .winner-box {
+        flex-direction: column;
+    }
+}
